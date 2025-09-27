@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', monospace;
-    background-color: #f0f0f0;
+    background-color: rgb(101, 71, 47);
+    color: #fff; /* Белый цвет для всего текста по умолчанию */
 }
 
 .typing-effect {
@@ -42,28 +43,31 @@ body {
     text-align: center;
     min-height: 60px;
     margin-bottom: 10px;
+    color: #fff; /* Явно указываем белый цвет */
 }
 
 .profile-image {
     width: 300px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(255,255,255,0.2);
 }
 
 .name-title {
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #fff; /* Явно указываем белый цвет */
+    text-align: center;
 }
 
+/* Остальные стили остаются без изменений */
 /* Стили для секции расписания */
 .schedule-section {
     display: none;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 40px 20px;
     margin-top: 40px;
-    border-top: 3px solid #333;
+    border-top: 3px solid #fff;
 }
 
 .schedule-section.visible {
@@ -81,43 +85,43 @@ body {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #333;
+    color: #fff;
     text-transform: uppercase;
 }
 
 .schedule-item {
-    background: #f8f8f8;
+    background: rgba(255, 255, 255, 0.1);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    border-left: 4px solid #333;
+    border-left: 4px solid #fff;
 }
 
 .date {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #fff;
     margin-bottom: 5px;
 }
 
 .city {
     font-size: 20px;
     font-weight: bold;
-    color: #555;
+    color: #ccc;
     margin-bottom: 5px;
 }
 
 .venue {
     font-size: 16px;
-    color: #666;
+    color: #999;
     margin-bottom: 15px;
     font-style: italic;
 }
 
 .ticket-btn {
     display: inline-block;
-    background-color: #333;
-    color: white;
+    background-color: #fff;
+    color: rgb(101, 71, 47);
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
@@ -126,13 +130,13 @@ body {
 }
 
 .ticket-btn:hover {
-    background-color: #555;
+    background-color: #ccc;
 }
 
 /* Стили для секции музыки */
 .music-section {
     display: none;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 40px 20px;
     border-top: 3px solid #666;
 }
@@ -152,7 +156,7 @@ body {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #333;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -163,14 +167,14 @@ body {
 .artist-section h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #fff;
     margin-bottom: 5px;
     text-align: center;
 }
 
 .song-title {
     font-size: 18px;
-    color: #666;
+    color: #ccc;
     text-align: center;
     margin-bottom: 20px;
     font-style: italic;
@@ -180,7 +184,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f8f8f8;
+    background: rgba(255, 255, 255, 0.1);
     margin-bottom: 15px;
     padding: 15px 20px;
     border-radius: 8px;
@@ -203,7 +207,7 @@ body {
 .music-name {
     font-size: 16px;
     font-weight: bold;
-    color: #333;
+    color: #fff;
 }
 
 .listen-btn {
@@ -222,22 +226,10 @@ body {
     background-color: #888;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* Существующие стили остаются */
-
 /* Стили для футера */
 .footer-section {
     display: none;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     padding: 40px 20px;
     border-top: 3px solid #666;
@@ -276,7 +268,7 @@ body {
 
 .social-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.3);
 }
 
 .social-icon {
@@ -312,6 +304,7 @@ body {
 .phone, .email {
     margin-bottom: 8px;
 }
+
 
 @keyframes fadeInUp {
     from {

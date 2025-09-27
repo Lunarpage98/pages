@@ -73,7 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
     async function startAnimation() {
         // 1. Печатаем первую строку
         await typeText(animatedText, texts.line1, 100);
-        
+        // 3. Удаляем первую строку (постепенно)
+        await deleteText(animatedText, 50);
         // Ждем немного и добавляем вторую строку
         await new Promise(resolve => setTimeout(resolve, 500));
         animatedText.innerHTML += '<br>'; // Перенос строки
@@ -82,12 +83,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Ждем паузу после печати обеих строк
         await new Promise(resolve => setTimeout(resolve, 1000));
         
-        // 2. Удаляем весь текст
-        await deleteText(animatedText, 50);
+        // 2. Удаляем вторую строку (постепенно)
+        await deleteSecondLine(animatedText, 50);
         
-        // 3. Показываем финальный текст
+        
+        
+        // 4. Показываем финальный текст
         await typeText(animatedText, texts.final, 100);
     }
+    
 
     // Запускаем анимацию
     startAnimation();
