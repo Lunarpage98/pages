@@ -3,107 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Александр Найданов - Стендап комик</title>
+    <title>Александр Найданов - Ведущий мероприятий</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="typing-effect">
-        <div id="text-container" class="centered-container"></div>
-    </div>
-    
-    <!-- Секция с расписанием -->
-    <div id="schedule" class="schedule-section">
-        <div class="schedule-container">
-            <h1>STAND UP ТУР ПО ГОРОДАМ!</h1>
-            
-            <div class="schedule-item">
-                <div class="date">22 октября 2025 19:00</div>
-                <div class="city">Улан-Удэ</div>
-                <div class="venue">Русский драм</div>
-                <a href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-2457@46640743?clientKey=41ab66c2-ecb7-4e85-9a3e-206f8d4b1852&regionId=213&clckid=dce071fe" 
-                   class="ticket-btn" target="_blank">Купить билеты</a>
+    <!-- Десктопная навигация -->
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#work">О моей работе</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Мобильная навигация -->
+    <div class="mobile-nav">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-content">
+                <a href="#about" class="menu-link">Обо мне</a>
+                <a href="#work" class="menu-link">О моей работе</a>
+                <a href="#contacts" class="menu-link">Контакты</a>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/naydansan" class="social-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        Instagram
+                    </a>
+                    <a href="https://t.me/naydansan" class="social-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                        Telegram
+                    </a>
+                    <a href="https://wa.me/79969357572" class="social-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                        WhatsApp
+                    </a>
+                </div>
             </div>
-            
-            <div class="schedule-item">
-                <div class="date">22 октября 2025 19:00</div>
-                <div class="city">Улан-Удэ</div>
-                <div class="venue">Русский драм</div>
-                <a href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-2457@46640743?clientKey=41ab66c2-ecb7-4e85-9a3e-206f8d4b1852&regionId=213&clckid=dce071fe" 
-                   class="ticket-btn" target="_blank">Купить билеты</a>
-            </div>
-            
-            <div class="schedule-item">
-                <div class="date">22 октября 2025 19:00</div>
-                <div class="city">Улан-Удэ</div>
-                <div class="venue">Русский драм</div>
-                <a href="https://widget.afisha.yandex.ru/w/sessions/ticketsteam-2457@46640743?clientKey=41ab66c2-ecb7-4e85-9a3e-206f8d4b1852&regionId=213&clckid=dce071fe" 
-                   class="ticket-btn" target="_blank">Купить билеты</a>
-            </div>
-            
         </div>
     </div>
 
-    <!-- Секция с музыкой -->
-    <div id="music" class="music-section">
-        <div class="music-container">
-            <h1>Музыка</h1>
-            
-            <div class="artist-section">
-                <div class="song-title"></div>
-                
-                <div class="music-item">
-                    <div class="music-info">
-                        <span class="music-type">СИНГЛ</span>
-                        <span class="music-name">О тебе</span>
-                    </div>
-                    <a href="https://vk.com/artist/naydansan" class="listen-btn" target="_blank">Слушать</a>
-                </div>
-                
-                <div class="music-item">
-                    <div class="music-info">
-                        <span class="music-type">СИНГЛ</span>
-                        <span class="music-name">Love Story</span>
-                    </div>
-                    <a href="https://vk.com/artist/naydansan" class="listen-btn" target="_blank">Слушать</a>
-                </div>
-                
-                <div class="music-item">
-                    <div class="music-info">
-                        <span class="music-type">СИНГЛ</span>
-                        <span class="music-name">Помоги</span>
-                    </div>
-                    <a href="https://vk.com/artist/naydansan" class="listen-btn" target="_blank">Слушать</a>
-                </div>
-            </div>
-            
+    <!-- Секция с фоткой -->
+    <section id="home">
+        <div class="text-content">
+            <div class="profession">ведущий мероприятий</div>
+            <h1 class="name">АЛЕКСАНДР<br>НАЙДАНОВ</h1>
+            <a href="https://t.me/naydanovs" class="cta-button">Связаться со мной</a>
         </div>
-    </div>
+    </section>
 
-    <!-- Футер с социальными сетями и контактами -->
-    <footer id="footer" class="footer-section">
-        <div class="footer-container">
-            <div class="social-links">
-                <a href="https://vk.com/naydan98" class="social-link" target="_blank">
-                    <img src="https://i.pinimg.com/474x/98/ea/dd/98eadd4d3a7407ed1a653ecf90d6fa25.jpg?nii=t" alt="VK" class="social-icon">
-                </a>
-                <a href="https://www.youtube.com/@naydansan" class="social-link" target="_blank">
-                    <img src="https://avatars.mds.yandex.net/i?id=fce2bc3655c93f332bf8537d6af4abcb_l-5663061-images-thumbs&n=13" alt="YouTube" class="social-icon">
-                </a>
-                <a href="https://t.me/naydansan" class="social-link" target="_blank">
-                    <img src="https://papik.pro/grafic/uploads/posts/2023-04/1682699769_papik-pro-p-smail-telegramm-znachok-png-16.png" alt="Telegram" class="social-icon">
-                </a>
+    <!-- Секция "Обо мне" -->
+    <section id="about">
+        <div class="about-container">
+            <!-- Фотоколлаж -->
+            <div class="photo-collage">
+                <div class="collage-row">
+                    <img src="Photo/photo1.jpg" alt="Фото 1" class="collage-photo">
+                    <img src="Photo/photo2.jpg" alt="Фото 2" class="collage-photo">
+                </div>
+                <div class="collage-row">
+                    <img src="Photo/photo3.jpg" alt="Фото 3" class="collage-photo single">
+                </div>
             </div>
             
-            <div class="contacts">
-                <h3>КОНТАКТЫ</h3>
-                <div class="cooperation">Сотрудничество</div>
+            <!-- Текст "Обо мне" -->
+            <div class="about-text">
+                <h1>ОБО МНЕ</h1>
+                <div class="achievements">
+                    <p>Финалист второго сезона шоу «Лига Городов» на ТНТ в составе команды «Аждослёз»</p>
+                    <p>Финалист «Comedy Баттл» на ТНТ в составе дуэта «Пурбо и Саня»</p>
+                    <p>Финалист Премьер-лиги 2023 года и чемпион лиги КВН «Азия» в составе команды «Берег Байкала»</p>
+                    <p>Победитель музыкального фестиваля «Голосящий КиВиН 2024» в составе команды «Партия» из Нижнего Новгорода, получил награду «Большой КиВин в золотом»</p>
+                </div>
+                <div class="description">
+                    <p>Можете пригласить меня на свой корпоратив и приглашать каждый год, ваши сотрудники будут удивляться что ведущий эльф. Но не только моя внешность поразит вас, но и то как я уведу вас от рутины и проведу вас в праздничное настроение.</p>
+                    <p>Вы забудете что я ваш ведущий, а будете думать что я ваш давний коллега который всегда искромётно пошутит на любые темы. Я тот самый постоялец в лаунж зоне, который развеселит коллегу посреди рабочего дня.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "О моей работе" -->
+    <section id="work">
+        <div class="work-container">
+            <h1>О МОЕЙ РАБОТЕ</h1>
+            <div class="video-container">
+                <video controls class="work-video">
+                    <source src="Video/video1.mov" type="video/mp4">
+                    Ваш браузер не поддерживает видео тег.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Контакты" -->
+    <section id="contacts">
+        <div class="contacts-container">
+            <h1>КОНТАКТЫ</h1>
+            <div class="contacts-content">
                 <div class="contact-info">
-                    <div class="phone">Телефон: +7(996)935-75-72</div>
-                    <div class="email">E-mail: Naydan98@ya.ru</div>
+                    <p>Свяжитесь со мной для обсуждения вашего мероприятия</p>
+                </div>
+                <div class="social-contacts">
+                    <a href="https://www.instagram.com/naydansan/" class="social-contact">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://t.me/naydansan" class="social-contact">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                        <span>Telegram</span>
+                    </a>
+                    <a href="https://wa.me/79969357572" class="social-contact">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                        <span>WhatsApp</span>
+                    </a>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
     <script src="script.js"></script>
 </body>
