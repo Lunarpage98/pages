@@ -583,4 +583,52 @@ body {
     .social-contact {
         width: 200px;
     }
+    /* Фикс для логотипов в мобильном меню */
+.social-link img {
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+/* Фикс для логотипов в секции контактов */
+.social-contact img {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 0.5rem;
+    object-fit: contain;
+}
+
+/* Принудительное ограничение размеров для всех внешних изображений */
+.social-links img,
+.social-contacts img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Дополнительные фиксы для мобильных */
+@media (max-width: 768px) {
+    .social-link img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    .social-contact img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-link img {
+        width: 18px !important;
+        height: 18px !important;
+    }
+    
+    .social-contact img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+
 }
